@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rfakira Space Runner</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/press-start-2p/4.1.0/web/press-start-2p.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div id="welcomeModal" class="modal-overlay">
+        <div class="modal">
+            <h2>Welcome to Space Runner!</h2>
+            <p>Help the circle navigate through space and earth!</p>
+            <p>CONTROLS:</p>
+            <p>- Press SPACE to jump</p>
+            <p>- Avoid tall rectangles by jumping</p>
+            <p>- Don't jump over triangles!</p>
+            <p>- Game speeds up every 10 points!</p>
+            <p> Goodluck >.< </p>
+            <div class="credits">
+                <p>Created by:</p>
+                <p>@Rafaakira & @mayaagnessa</p>
+            </div>
+            <button onclick="startGame()">START GAME</button>
+        </div>
+    </div>
+
+    <div id="gameOverModal" class="modal-overlay">
+        <div class="modal">
+            <h2>GAME OVER!</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <div class="credits">
+                <p>Created by:</p>
+                <p>@Rafaakira & @mayaagnessa</p>
+            </div>
+            <button onclick="restartGame()">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <div class="logo" onclick="window.location.href='https://linktree-v1.vercel.app/'">Rfakira</div>
+    <canvas id="gameCanvas" width="600" height="200"></canvas>
+    <script src="assets/java/game.js"></script>
+</body>
+</html>
